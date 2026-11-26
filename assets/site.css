@@ -738,3 +738,128 @@ button.secondary:hover { background: rgba(213, 107, 255, 0.2); }
 /* Bölüm aralıkları ince ayar */
 #guven { padding-bottom: 24px; }
 @media (min-width: 900px) { #guven { padding-bottom: 40px; } #google-play { padding-top: 60px; } }
+
+/* ---------- Uzay arka planı: kayan yıldızlar (yalnız CSS, transform animasyonu) ---------- */
+body { background: transparent; }
+html::before, body::before {
+  content: ""; position: fixed; left: 0; right: 0; top: 0; height: calc(100vh + 600px); z-index: -1;
+  pointer-events: none; will-change: transform; background-repeat: repeat;
+}
+html::before {
+  background-image:
+    radial-gradient(1.3px 1.3px at 231px 286px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 231px 260px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 97px 94px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 243px 322px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 406px 95px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 228px 155px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 46px 275px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 324px 21px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 202px 231px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 378px 315px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 80px 319px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 270px 32px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 18px 97px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 307px 15px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 167px 225px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 100px 265px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 327px 150px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 2px 339px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 234px 335px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 208px 282px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 362px 130px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 388px 117px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 147px 15px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 288px 392px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 205px 55px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 197px 34px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 350px 0px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 107px 26px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 192px 362px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 214px 37px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 322px 101px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 138px 172px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 159px 170px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 209px 388px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 68px 126px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 51px 5px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 238px 408px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 90px 349px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 96px 229px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 97px 374px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 214px 329px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 59px 202px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 108px 0px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 411px 303px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 10px 107px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 201px 308px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 295px 51px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 74px 109px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 132px 4px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 168px 151px, rgba(184,176,207,.7), transparent),
+    radial-gradient(1.3px 1.3px at 37px 38px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 106px 298px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 124px 7px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 188px 190px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 232px 65px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 247px 294px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 197px 93px, rgba(213,107,255,.65), transparent),
+    radial-gradient(1.3px 1.3px at 78px 159px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 418px 312px, rgba(249,247,255,.75), transparent),
+    radial-gradient(1.3px 1.3px at 371px 97px, rgba(249,247,255,.75), transparent);
+  background-size: 420px 420px;
+  animation: stars-drift-far 60s linear infinite;
+  opacity: 1;
+}
+body::before {
+  background-image:
+    radial-gradient(2.2px 2.2px at 201px 397px, rgba(213,107,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 80px 431px, rgba(249,247,255,.95), transparent),
+    radial-gradient(2.2px 2.2px at 106px 111px, rgba(249,247,255,.95), transparent),
+    radial-gradient(2.2px 2.2px at 524px 261px, rgba(249,247,255,.95), transparent),
+    radial-gradient(2.2px 2.2px at 401px 263px, rgba(213,107,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 502px 300px, rgba(145,60,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 179px 70px, rgba(249,247,255,.95), transparent),
+    radial-gradient(2.2px 2.2px at 233px 490px, rgba(145,60,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 75px 286px, rgba(249,247,255,.95), transparent),
+    radial-gradient(2.2px 2.2px at 208px 16px, rgba(249,247,255,.95), transparent),
+    radial-gradient(2.2px 2.2px at 275px 421px, rgba(213,107,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 255px 61px, rgba(249,247,255,.95), transparent),
+    radial-gradient(2.2px 2.2px at 180px 288px, rgba(213,107,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 543px 134px, rgba(249,247,255,.95), transparent),
+    radial-gradient(2.2px 2.2px at 370px 141px, rgba(213,107,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 338px 534px, rgba(145,60,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 143px 35px, rgba(249,247,255,.95), transparent),
+    radial-gradient(2.2px 2.2px at 486px 366px, rgba(145,60,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 319px 34px, rgba(249,247,255,.95), transparent),
+    radial-gradient(2.2px 2.2px at 76px 493px, rgba(249,247,255,.95), transparent),
+    radial-gradient(2.2px 2.2px at 318px 326px, rgba(249,247,255,.95), transparent),
+    radial-gradient(2.2px 2.2px at 74px 77px, rgba(213,107,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 559px 376px, rgba(145,60,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 45px 132px, rgba(213,107,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 360px 86px, rgba(145,60,255,.9), transparent),
+    radial-gradient(2.2px 2.2px at 484px 79px, rgba(213,107,255,.9), transparent);
+  background-size: 560px 560px;
+  animation: stars-drift-mid 36s linear infinite, stars-twinkle 6s ease-in-out infinite alternate;
+}
+body::after {
+  content: ""; position: fixed; z-index: -1; pointer-events: none;
+  top: 12vh; left: -20vw; width: 140px; height: 2px; border-radius: 2px;
+  background: linear-gradient(90deg, transparent, rgba(213,107,255,.0) 10%, rgba(249,247,255,.95));
+  box-shadow: 0 0 12px rgba(213,107,255,.8);
+  transform: rotate(-24deg); opacity: 0;
+  animation: shooting-star 8s ease-in 2s infinite;
+}
+@keyframes stars-drift-far { from { transform: translate3d(0,0,0); } to { transform: translate3d(0,-420px,0); } }
+@keyframes stars-drift-mid { from { transform: translate3d(0,0,0); } to { transform: translate3d(0,-560px,0); } }
+@keyframes stars-twinkle { from { opacity: .7; } to { opacity: 1; } }
+@keyframes shooting-star {
+  0% { opacity: 0; translate: 0 0; }
+  2% { opacity: 1; }
+  9% { opacity: 0; translate: 75vw 34vh; }
+  100% { opacity: 0; translate: 75vw 34vh; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html::before, body::before { animation: none !important; }
+  body::after { display: none; }
+}
