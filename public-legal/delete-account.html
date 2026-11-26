@@ -1,8 +1,58 @@
-<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FOYTRAL · Hesap Silme</title><style>body{margin:0;background:#07080a;color:#f5f8f9;font-family:Arial,sans-serif}.wrap{max-width:660px;margin:auto;padding:48px 20px 80px}.card{background:#101318;border:1px solid #26313a;border-radius:24px;padding:22px}.eyebrow{color:#A78BFA;letter-spacing:2px;font-size:12px;font-weight:900}.muted{color:#97a2ab;line-height:1.7}.field{margin-top:16px}label{display:block;font-size:12px;font-weight:800}input{width:100%;box-sizing:border-box;margin-top:7px;background:#090b0e;color:#fff;border:1px solid #303b44;border-radius:13px;padding:13px}button{width:100%;margin-top:14px;background:#A78BFA;color:#fff;border:0;border-radius:13px;padding:14px;font-weight:900;cursor:pointer}button.secondary{background:#181d22;border:1px solid #303b44}button:disabled{opacity:.5}.ok{color:#7be0a9}.err{color:#ff9fa7}.small{font-size:12px}</style></head><body><main class="wrap"><div class="card"><div class="eyebrow">FOYTRAL</div><h1>Hesabını sil</h1><p class="muted">Hesabını ve onunla ilişkili uygulama verilerini silmek için önce e-posta ile oturum doğrulaması yap. Silme geri alınamaz.</p><div class="field"><label for="email">E-posta</label><input id="email" type="email" autocomplete="email" placeholder="ornek@mail.com"></div><button id="send">Doğrulama bağlantısı gönder</button><div id="after" hidden><p id="session" class="muted small"></p><button id="delete" class="secondary">Hesabımı kalıcı olarak sil</button></div><p id="msg" class="muted small"></p></div><div class="card"><h2>Silinenler</h2><p class="muted">Profil, sosyal içerikler, grup ilişkileri, arkadaşlıklar, mesajlaşma ve uygulamaya bağlı diğer kullanıcı verileri silme akışından geçirilir. Yasal saklama zorunluluğu olan veriler varsa yalnızca zorunlu kapsamda ve sürede tutulabilir.</p></div><p class="muted small">Silme veya gizlilik soruları: __PRIVACY_EMAIL__</p></main><script type="module">
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#080615">
+<title>FOYTRAL · Hesap Silme</title>
+<meta name="description" content="FOYTRAL hesabını ve ilişkili verilerini silme.">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="../assets/favicon-64.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#icerik">İçeriğe geç</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../index.html" aria-label="FOYTRAL ana sayfa"><img src="../assets/icon-512.png" alt="" width="34" height="34">FOYTRAL</a>
+    <nav class="site-nav" aria-label="Ana menü">
+      <a class="nav-optional" href="../index.html#ozellikler">Özellikler</a>
+      <a href="../public-legal/index.html">Yasal merkez</a>
+      <a class="nav-optional" href="../public-legal/privacy.html">Gizlilik</a>
+      <a href="../public-legal/delete-account.html" aria-current="page">Hesap silme</a>
+    </nav>
+  </div>
+</header>
+<main id="icerik" class="legal-main wrap">
+<div class="card"><div class="eyebrow">FOYTRAL</div><h1>Hesabını sil</h1><p class="muted">Hesabını ve onunla ilişkili uygulama verilerini silmek için önce e-posta ile oturum doğrulaması yap. Silme geri alınamaz.</p><div class="field"><label for="email">E-posta</label><input id="email" type="email" autocomplete="email" placeholder="ornek@mail.com"></div><button id="send">Doğrulama bağlantısı gönder</button><div id="after" hidden><p id="session" class="muted small"></p><button id="delete" class="secondary">Hesabımı kalıcı olarak sil</button></div><p id="msg" class="muted small"></p></div><div class="card"><h2>Silinenler</h2><p class="muted">Profil, sosyal içerikler, grup ilişkileri, arkadaşlıklar, mesajlaşma ve uygulamaya bağlı diğer kullanıcı verileri silme akışından geçirilir. Yasal saklama zorunluluğu olan veriler varsa yalnızca zorunlu kapsamda ve sürede tutulabilir.</p></div><p class="muted small">Silme veya gizlilik soruları: __PRIVACY_EMAIL__</p>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-brand">
+      <strong>FOYTRAL</strong>
+      <span>Yayıncı: __LEGAL_OPERATOR_NAME__ · <a href="mailto:__SUPPORT_EMAIL__">__SUPPORT_EMAIL__</a></span>
+      <span class="small">© 2026 FOYTRAL</span>
+    </div>
+    <nav class="footer-links" aria-label="Yasal bağlantılar">
+      <a href="../public-legal/about.html">Hakkımızda</a>
+      <a href="../public-legal/privacy.html">Gizlilik</a>
+      <a href="../public-legal/terms.html">Koşullar</a>
+      <a href="../public-legal/community.html">Topluluk kuralları</a>
+      <a href="../public-legal/third-party.html">Üçüncü taraflar</a>
+      <a href="../public-legal/delete-account.html">Hesap silme</a>
+      <a href="../public-legal/contact.html">İletişim</a>
+    </nav>
+  </div>
+</footer>
+<script type="module">
 const SUPABASE_URL='__SUPABASE_URL__'; const SUPABASE_KEY='__SUPABASE_PUBLISHABLE_KEY__'; const DELETE_FUNCTION='foytral-delete-account-v2';
 const msg=document.querySelector('#msg'),after=document.querySelector('#after'),sessionText=document.querySelector('#session'); let sb=null;
 function ready(){return Boolean(SUPABASE_URL&&SUPABASE_KEY&&!SUPABASE_URL.startsWith('__')&&!SUPABASE_KEY.startsWith('__'))}
 async function init(){if(!ready()){msg.textContent='Bu sayfa yayın öncesinde Supabase bilgileriyle yapılandırılmalıdır.';return} const mod=await import('https://esm.sh/@supabase/supabase-js@2.57.4'); sb=mod.createClient(SUPABASE_URL,SUPABASE_KEY); const {data}=await sb.auth.getSession(); if(data.session){after.hidden=false;sessionText.textContent='Oturum doğrulandı. Aşağıdaki düğme kalıcı silmeyi başlatır.'} sb.auth.onAuthStateChange((_e,s)=>{after.hidden=!s;if(s)sessionText.textContent='Oturum doğrulandı. Hesabını kalıcı olarak silebilirsin.'})}
 document.querySelector('#send').onclick=async()=>{if(!sb){msg.className='err';msg.textContent='Sayfa henüz üretim için yapılandırılmadı.';return}const email=document.querySelector('#email').value.trim();if(!email){msg.className='err';msg.textContent='E-posta adresini gir.';return}const {error}=await sb.auth.signInWithOtp({email,options:{emailRedirectTo:window.location.href,shouldCreateUser:false}});const noAccount=error&&/signup|not allowed|user not found/i.test(error.message||'');const failed=error&&!noAccount;msg.className=failed?'err':'ok';msg.textContent=failed?error.message:'Bu e-posta ile kayıtlı bir FOYTRAL hesabı varsa doğrulama bağlantısı gönderildi. E-postadaki bağlantıyı açıp bu sayfaya dön.'};
 document.querySelector('#delete').onclick=async()=>{if(!sb)return;const {data:{session}}=await sb.auth.getSession();if(!session){msg.className='err';msg.textContent='Oturum bulunamadı.';return}if(!confirm('Hesabın ve ilişkili kişisel verilerin silinsin mi?'))return;document.querySelector('#delete').disabled=true;const res=await fetch(SUPABASE_URL+'/functions/v1/'+DELETE_FUNCTION,{method:'POST',headers:{Authorization:'Bearer '+session.access_token,apikey:SUPABASE_KEY,'Content-Type':'application/json'},body:'{}'});const data=await res.json().catch(()=>({}));if(!res.ok||!data.ok){document.querySelector('#delete').disabled=false;msg.className='err';msg.textContent=data.error||'Hesap silinemedi.';return}await sb.auth.signOut();after.hidden=true;msg.className='ok';msg.textContent='Hesabın silindi.'}; init().catch(e=>{msg.className='err';msg.textContent=String(e)});
-</script></body></html>
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "_aciklama": "Yer tutucuların (__ANAHTAR__) değerleri. Boş bırakılan isteğe bağlı alanlar sayfadan boş olarak çıkar; zorunlu alan boşsa derleme durur.",
+  "__LEGAL_OPERATOR_NAME__": "",
+  "__LEGAL_OPERATOR_ADDRESS__": "",
+  "__LEGAL_OPERATOR_KEP__": "",
+  "__LEGAL_TRADEMARK_OWNER__": "",
+  "__LEGAL_EFFECTIVE_DATE__": "",
+  "__SUPPORT_EMAIL__": "",
+  "__SUPPORT_PHONE__": "",
+  "__PRIVACY_EMAIL__": "",
+  "__SECURITY_EMAIL__": "",
+  "__LEGAL_WEBSITE_URL__": "https://foytral.com",
+  "__ACCOUNT_DELETION_URL__": "https://foytral.com/public-legal/delete-account.html",
+  "__APP_VERSION__": "",
+  "__SUPABASE_URL__": "",
+  "__SUPABASE_PUBLISHABLE_KEY__": ""
+}
