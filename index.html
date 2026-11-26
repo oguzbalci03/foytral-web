@@ -2,143 +2,280 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#080615">
-<title>FOYTRAL · Sporun ortak alanı</title>
+<title>FOYTRAL · Sporunu bul. İnsanını bul. Birlikte yap.</title>
 <meta name="description" content="FOYTRAL; spor salonlarını, antrenörleri, toplulukları ve antrenman takibini tek uygulamada buluşturan spor platformu. Google Play’de yakında.">
+<link rel="canonical" href="https://foytral.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FOYTRAL">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="FOYTRAL · Sporunu bul. İnsanını bul. Birlikte yap.">
+<meta property="og:description" content="FOYTRAL; spor salonlarını, antrenörleri, toplulukları ve antrenman takibini tek uygulamada buluşturan spor platformu. Google Play’de yakında.">
+<meta property="og:url" content="https://foytral.com/">
+<meta property="og:image" content="https://foytral.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FOYTRAL — Sporunu bul. Ekibini bul. Uygulama ekranlarıyla tanıtım görseli.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FOYTRAL · Sporunu bul. İnsanını bul. Birlikte yap.">
+<meta name="twitter:description" content="FOYTRAL; spor salonlarını, antrenörleri, toplulukları ve antrenman takibini tek uygulamada buluşturan spor platformu. Google Play’de yakında.">
+<meta name="twitter:image" content="https://foytral.com/assets/og-image.jpg">
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/intertight-800.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
-<meta property="og:title" content="FOYTRAL · Sporun ortak alanı">
-<meta property="og:description" content="Salonunu bul, antrenörünü keşfet, topluluğunla birlikte ilerle.">
-<meta property="og:image" content="assets/icon-512.png">
+<script src="assets/site.js" defer></script>
+<link rel="preload" as="image" type="image/webp" href="assets/img/ekran-ana-sayfa-640.webp" imagesrcset="assets/img/ekran-ana-sayfa-320.webp 320w, assets/img/ekran-ana-sayfa-640.webp 640w" imagesizes="(min-width: 900px) 290px, 60vw">
 </head>
-<body>
+<body id="top">
 <a class="skip-link" href="#icerik">İçeriğe geç</a>
 <header class="site-header">
-  <div class="container">
-    <a class="brand" href="index.html" aria-label="FOYTRAL ana sayfa"><img src="assets/icon-512.png" alt="" width="34" height="34">FOYTRAL</a>
-    <nav class="site-nav" aria-label="Ana menü">
-      <a class="nav-optional" href="index.html#ozellikler">Özellikler</a>
+  <div class="container header-row">
+    <a class="brand" href="index.html" aria-label="FOYTRAL ana sayfa"><span class="brand-mark"><img src="assets/foytral-mark.svg" alt="" width="26" height="26"></span><span>FOYTRAL</span></a>
+    <nav class="nav-desktop" aria-label="Ana menü">
+      <a href="index.html#ozellikler">Özellikler</a>
+      <a href="index.html#ekranlar">Ekranlar</a>
+      <a href="index.html#guven">Güven</a>
       <a href="public-legal/index.html">Yasal merkez</a>
-      <a class="nav-optional" href="public-legal/privacy.html">Gizlilik</a>
       <a href="public-legal/delete-account.html">Hesap silme</a>
+      <a class="nav-cta" href="index.html#google-play">Yakında</a>
     </nav>
+    <details class="nav-mobile">
+      <summary aria-label="Menü"><span class="burger" aria-hidden="true"><span></span></span></summary>
+      <nav class="nav-panel" aria-label="Mobil menü">
+        <a href="index.html#ozellikler">Özellikler</a>
+        <a href="index.html#ekranlar">Ekranlar</a>
+        <a href="index.html#guven">Gizlilik ve güven</a>
+        <a href="public-legal/index.html">Yasal merkez</a>
+        <a href="public-legal/privacy.html">Gizlilik politikası</a>
+        <a href="public-legal/delete-account.html">Hesap silme</a>
+        <a href="public-legal/contact.html">İletişim</a>
+        <a class="nav-panel-cta" href="index.html#google-play">Google Play · yakında</a>
+      </nav>
+    </details>
   </div>
 </header>
 <main id="icerik">
-  <section class="hero">
+  <section class="hero" aria-labelledby="hero-title">
     <div class="container hero-grid">
-      <div>
-        <p class="eyebrow reveal">Spor ekosistemi · Türkiye</p>
-        <h1 class="reveal reveal-2">Sporun <span class="grad">ortak alanı.</span></h1>
-        <p class="lead reveal reveal-2">FOYTRAL; sporcuları, antrenörleri, spor salonlarını ve kulüpleri tek uygulamada buluşturur. Yakınındaki tesisi bul, doğru antrenörü keşfet, antrenmanını kaydet ve topluluğunla birlikte ilerle.</p>
-        <div class="hero-actions reveal reveal-3">
-          <a class="btn btn-primary" href="#google-play">Google Play’de yakında</a>
-          <a class="btn btn-ghost" href="#ozellikler">Özellikleri gör</a>
+      <div class="hero-copy">
+        <p class="eyebrow hero-in">Spor ekosistemi · Türkiye</p>
+        <h1 id="hero-title" class="hero-in hero-in-2"><span class="line">Sporunu bul.</span> <span class="line">İnsanını bul.</span> <span class="line grad">Birlikte yap.</span></h1>
+        <p class="lead hero-in hero-in-3">FOYTRAL; spor salonlarını, antrenörleri, toplulukları ve antrenman takibini tek uygulamada buluşturur.</p>
+        <div class="hero-actions hero-in hero-in-4">
+          <a class="soon-badge" href="#google-play"><span class="soon-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 1 1 12 0v5l2 2H4l2-2Z"/><path d="M10 21h4"/></svg></span><span class="soon-badge-text"><small lang="en">Android</small><span>Google Play’de yakında</span></span></a>
+          <a class="btn btn-ghost" href="#ozellikler">Daha fazla bilgi</a>
         </div>
+        <ul class="hero-facts hero-in hero-in-4" aria-label="Kısaca FOYTRAL">
+          <li>Ücretsiz</li>
+          <li>Reklamsız</li>
+          <li>Konum yalnızca izninle</li>
+        </ul>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <img src="assets/icon-512.png" alt="" width="512" height="512">
+      <div class="hero-stage hero-in hero-in-3">
+        <span class="ring" aria-hidden="true"></span>
+        <span class="glow" aria-hidden="true"></span>
+        <div class="phone phone-back"><div class="phone-screen"><img src="assets/img/ekran-rota-320.webp" srcset="assets/img/ekran-rota-320.webp 320w, assets/img/ekran-rota-640.webp 640w" sizes="(min-width: 900px) 256px, 53vw" width="320" height="648" alt="Rota Merkezi ekranı: yakındaki rotalar, filtreler, Rota çiz düğmesi ve mesafe sıralamaları" fetchpriority="high"></div></div>
+        <div class="phone phone-front"><div class="phone-screen"><img src="assets/img/ekran-ana-sayfa-320.webp" srcset="assets/img/ekran-ana-sayfa-320.webp 320w, assets/img/ekran-ana-sayfa-640.webp 640w" sizes="(min-width: 900px) 290px, 60vw" width="320" height="648" alt="FOYTRAL ana sayfa ekranı: spor branşları, haftalık hedefler, FOYTRAL Arena kartı ve yaklaşan etkinlikler" fetchpriority="high"></div></div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="nedir" aria-labelledby="nedir-title">
-    <div class="container"><div class="section-head">
-      <p class="eyebrow">FOYTRAL nedir?</p>
-      <h2 id="nedir-title">Spor hayatının merkezi.</h2>
-      <p>Hangi branşta olursan ol, spor yapmak için ihtiyaç duyduğun yer, insan ve araçlar dağınık olmamalı. FOYTRAL keşfi, antrenmanı ve topluluğu tek deneyimde birleştirir: haritada spor dünyasını görürsün, antrenmanını kaydedersin, aynı sporu yapan insanlarla bağ kurarsın.</p>
-    </div></div>
-  </section>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Spor haritası</span><span>Antrenör bulma</span><span>Topluluk</span><span>Canlı koşu</span><span>FOYTRAL Fit</span><span>Krallıklar</span><span>Arena</span>
+      <span>Spor haritası</span><span>Antrenör bulma</span><span>Topluluk</span><span>Canlı koşu</span><span>FOYTRAL Fit</span><span>Krallıklar</span><span>Arena</span>
+    </div>
+  </div>
 
   <section class="section" id="ozellikler" aria-labelledby="ozellikler-title">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head reveal">
         <p class="eyebrow">Temel özellikler</p>
-        <h2 id="ozellikler-title">İhtiyacın olan her şey, tek uygulamada.</h2>
+        <h2 id="ozellikler-title">Spor hayatın için ihtiyacın olan her şey, tek uygulamada.</h2>
+        <p>Hangi branşta olursan ol; yer, insan ve araçlar dağınık olmamalı. FOYTRAL keşfi, antrenmanı ve topluluğu tek deneyimde birleştirir.</p>
       </div>
       <div class="feature-grid">
-      <article class="feature">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg></div>
-        <h3>Spor haritası</h3>
-        <p>Yakınındaki spor salonlarını, tesisleri ve kulüpleri haritada gör; il, ilçe ve branşa göre ara.</p>
-      </article>
-      <article class="feature">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/><path d="m15.5 12.5 1.5 1.5 3-3"/></svg></div>
-        <h3>Antrenör bulma</h3>
-        <p>Branşına uygun antrenörleri keşfet. Aramada yalnızca doğrulanmış ve yayınlanmış profiller listelenir.</p>
-      </article>
-      <article class="feature">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9" r="2.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M15.5 14.2c3 .2 5.5 2.2 5.5 5.3"/></svg></div>
-        <h3>Topluluk</h3>
-        <p>Spor gruplarına katıl, etkinlikleri takip et ve antrenman arkadaşlarınla mesajlaş. Rahatsız edici içeriği bildirebilir, kullanıcıları engelleyebilirsin.</p>
-      </article>
-      <article class="feature">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="4.5" r="2"/><path d="m6 21 4-6 3 2v5"/><path d="M9.5 11.5 12 8l3.5 2 2.5 3"/><path d="m12 8-3.5 1L7 12"/></svg></div>
-        <h3>Canlı koşu</h3>
-        <p>Koşu, yürüyüş ve bisiklet antrenmanını GPS ile kaydet; tempo, mesafe ve süreyi anlık gör. Ekran kilitliyken de kayıt sürer.</p>
-      </article>
-      <article class="feature">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 6.5v11M17.5 6.5v11M3 9v6M21 9v6M6.5 12h11"/></svg></div>
-        <h3>FOYTRAL Fit</h3>
-        <p>Haftalık plan, kuvvet günlüğü, beslenme, su ve adım takibi ile kişisel gelişimini tek yerde izle.</p>
-      </article>
-      <article class="feature">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
-        <h3>Kontrol sende</h3>
-        <p>Konum yalnızca izin verdiğinde ve ilgili özellik için kullanılır. Reklam yok; hesabını ve verilerini istediğin an silebilirsin.</p>
-      </article>
+        <article class="feature reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg></div>
+          <h3>Spor haritası</h3>
+          <p>Yakınındaki spor salonlarını, tesisleri ve kulüpleri haritada gör; il, ilçe ve branşa göre ara.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/><path d="m15.5 12.5 1.5 1.5 3-3"/></svg></div>
+          <h3>Antrenör bulma</h3>
+          <p>Branşına uygun antrenörleri keşfet. Aramada yalnızca doğrulanmış ve yayınlanmış profiller listelenir.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9" r="2.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M15.5 14.2c3 .2 5.5 2.2 5.5 5.3"/></svg></div>
+          <h3>Topluluk</h3>
+          <p>Spor gruplarına katıl, etkinlikleri takip et ve antrenman arkadaşlarınla mesajlaş. Rahatsız edici içeriği bildirebilir, kullanıcıları engelleyebilirsin.</p>
+        </article>
+        <article class="feature feature-wide reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="14" cy="4.5" r="2"/><path d="m6 21 4-6 3 2v5"/><path d="M9.5 11.5 12 8l3.5 2 2.5 3"/><path d="m12 8-3.5 1L7 12"/></svg></div>
+          <h3>Canlı koşu</h3>
+          <p>Koşu, yürüyüş ve bisiklet antrenmanını GPS ile kaydet; tempo, mesafe ve süreyi anlık gör. Ekran kilitliyken de kayıt sürer.</p>
+        </article>
+        <article class="feature feature-wide reveal">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 6.5v11M17.5 6.5v11M3 9v6M21 9v6M6.5 12h11"/></svg></div>
+          <h3>FOYTRAL Fit</h3>
+          <p>Haftalık plan, kuvvet günlüğü, beslenme, su ve adım takibi ile kişisel gelişimini tek yerde izle.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section aria-labelledby="spot-kosu-title">
+    <div class="container spotlight">
+      <div class="spot-media reveal"><div class="phone "><div class="phone-screen"><img src="assets/img/ekran-rota-320.webp" srcset="assets/img/ekran-rota-320.webp 320w, assets/img/ekran-rota-640.webp 640w" sizes="(min-width: 900px) 300px, 66vw" width="320" height="648" alt="Rota Merkezi ekranı: yakındaki rotalar, filtreler, Rota çiz düğmesi ve mesafe sıralamaları" loading="lazy" decoding="async"></div></div></div>
+      <div class="spot-copy reveal">
+        <p class="eyebrow">Canlı koşu · Rota Merkezi</p>
+        <h2 id="spot-kosu-title">Rotanı çiz, şehrini keşfet.</h2>
+        <p>Yakınındaki rotaları bul, kendi rotanı haritada birkaç dokunuşla çiz ve antrenmanını GPS ile kaydet.</p>
+        <ul class="check-list">
+          <li><strong>Ekran kilitliyken de kayıt</strong>Antrenman sırasında kayıt, kalıcı bildirimle sürer ve antrenmanı bitirdiğinde hemen durur.</li>
+          <li><strong>Doğrulanan sıralamalar</strong>5K, 10K ve yarı maraton sıralamalarına yalnızca GPS ile doğrulanan koşular girer.</li>
+          <li><strong>Canlı konum yalnızca sen açarsan</strong>Karşılıklı kabul ettiğin yakın çevrenle, yalnızca antrenman sırasında paylaşılır.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="spot-fit-title">
+    <div class="container spotlight flip">
+      <div class="spot-media reveal"><div class="phone "><div class="phone-screen"><img src="assets/img/ekran-fit-320.webp" srcset="assets/img/ekran-fit-320.webp 320w, assets/img/ekran-fit-640.webp 640w" sizes="(min-width: 900px) 300px, 66vw" width="320" height="648" alt="FOYTRAL Fit ekranı: bugünün antrenman önerisi, antrenman, beslenme ve ilerleme sekmeleri, programlar" loading="lazy" decoding="async"></div></div></div>
+      <div class="spot-copy reveal">
+        <p class="eyebrow" lang="en">FOYTRAL Fit</p>
+        <h2 id="spot-fit-title">Antrenman, beslenme ve ilerleme.</h2>
+        <p>Hedefine göre kişisel plan ve set, tekrar, dinlenme süreleriyle rehberli programlar.</p>
+        <ul class="check-list">
+          <li><strong>Bugünün önerisi</strong>Odak alanına ve seviyene göre hareket grupları ile programlar.</li>
+          <li><strong>Beslenme, su ve adım</strong>Öğün, su, kilo ve kuvvet kayıtların tek yerde.</li>
+          <li><strong>Kayıtların sana ait</strong>Oturum açıkken yalnızca sana görünür biçimde hesabına yedeklenir.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="spot-krallik-title">
+    <div class="container spotlight">
+      <div class="spot-media reveal"><div class="phone "><div class="phone-screen"><img src="assets/img/ekran-kralliklar-320.webp" srcset="assets/img/ekran-kralliklar-320.webp 320w, assets/img/ekran-kralliklar-640.webp 640w" sizes="(min-width: 900px) 300px, 66vw" width="320" height="648" alt="FOYTRAL Krallıkları ekranı: seviye, taç, rozet ve check-in sayaçları, spor salonu kralı kartı" loading="lazy" decoding="async"></div></div></div>
+      <div class="spot-copy reveal">
+        <p class="eyebrow">Krallıklar · Arena</p>
+        <h2 id="spot-krallik-title">Salonunun kralı ol.</h2>
+        <p>Check-in yap, rozet kazan, tacı al. FOYTRAL Arena’da ise gerçek rakip, aynı mesafe: GPS ile doğrulanan sonuçlarla 1v1 yarış.</p>
+        <ul class="check-list">
+          <li><strong>Düzenli olan kazanır</strong>Spor salonu kralı, son 30 gündeki antrenman günleri ve puanla belirlenir.</li>
+          <li><strong>Rakibinle, iki tarafın izniyle</strong>Arena yarışında canlı konum yalnızca rakibinle paylaşılır.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section" id="ekranlar" aria-labelledby="ekranlar-title">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Uygulamanın içinden</p>
+        <h2 id="ekranlar-title">Gerçek ekranlar, sade bir deneyim.</h2>
+        <p>Koyu, odaklı ve hızlı. Görüntüler uygulamanın güncel test sürümünden alınmıştır.</p>
+      </div>
+    </div>
+    <ul class="gallery" role="list" tabindex="0" aria-label="Uygulama ekran görüntüleri, yatay kaydırılabilir">
+      <li><figure><div class="phone "><div class="phone-screen"><img src="assets/img/ekran-ana-sayfa-320.webp" srcset="assets/img/ekran-ana-sayfa-320.webp 320w, assets/img/ekran-ana-sayfa-640.webp 640w" sizes="216px" width="320" height="648" alt="FOYTRAL ana sayfa ekranı: spor branşları, haftalık hedefler, FOYTRAL Arena kartı ve yaklaşan etkinlikler" loading="lazy" decoding="async"></div></div><figcaption><strong>Ana sayfa</strong><span>Branşlar, hedefler ve etkinlikler</span></figcaption></figure></li>
+      <li><figure><div class="phone "><div class="phone-screen"><img src="assets/img/ekran-rota-320.webp" srcset="assets/img/ekran-rota-320.webp 320w, assets/img/ekran-rota-640.webp 640w" sizes="216px" width="320" height="648" alt="Rota Merkezi ekranı: yakındaki rotalar, filtreler, Rota çiz düğmesi ve mesafe sıralamaları" loading="lazy" decoding="async"></div></div><figcaption><strong>Rota Merkezi</strong><span>Rotanı çiz, şehrini keşfet</span></figcaption></figure></li>
+      <li><figure><div class="phone "><div class="phone-screen"><img src="assets/img/ekran-fit-320.webp" srcset="assets/img/ekran-fit-320.webp 320w, assets/img/ekran-fit-640.webp 640w" sizes="216px" width="320" height="648" alt="FOYTRAL Fit ekranı: bugünün antrenman önerisi, antrenman, beslenme ve ilerleme sekmeleri, programlar" loading="lazy" decoding="async"></div></div><figcaption><strong>FOYTRAL Fit</strong><span>Kişisel plan ve programlar</span></figcaption></figure></li>
+      <li><figure><div class="phone "><div class="phone-screen"><img src="assets/img/ekran-kralliklar-320.webp" srcset="assets/img/ekran-kralliklar-320.webp 320w, assets/img/ekran-kralliklar-640.webp 640w" sizes="216px" width="320" height="648" alt="FOYTRAL Krallıkları ekranı: seviye, taç, rozet ve check-in sayaçları, spor salonu kralı kartı" loading="lazy" decoding="async"></div></div><figcaption><strong>Krallıklar</strong><span>Check-in, rozet ve taç</span></figcaption></figure></li>
+      <li><figure><div class="phone "><div class="phone-screen"><img src="assets/img/ekran-topluluk-320.webp" srcset="assets/img/ekran-topluluk-320.webp 320w, assets/img/ekran-topluluk-640.webp 640w" sizes="216px" width="320" height="648" alt="Ayarlar ekranı: görünüm ve dil seçimi, “İnsanını bul. Birlikte hareket et.” FOYTRAL kimlik kartı" loading="lazy" decoding="async"></div></div><figcaption><strong>İnsanını bul</strong><span>Akış, harita ve antrenman tek yerde</span></figcaption></figure></li>
+    </ul>
+    <p class="gallery-hint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>Kaydırarak tüm ekranları gör</p>
+  </section>
+
+  <section class="section" id="guven" aria-labelledby="guven-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Gizlilik ve güven</p>
+        <h2 id="guven-title">Kontrol sende.</h2>
+        <p>FOYTRAL’da neyin, kiminle, ne zaman paylaşılacağına sen karar verirsin.</p>
+      </div>
+      <ul class="trust-grid">
+        <li class="trust-item reveal"><span class="ti-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><h3>Konum yalnızca izninle</h3><p>Konum, harita ve antrenman kaydı için yalnızca izin verdiğinde kullanılır. Arka planda gizli konum takibi yapılmaz.</p></div></li>
+        <li class="trust-item reveal"><span class="ti-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/></svg></span><div><h3>Reklam yok</h3><p>Uygulamada reklam veya analitik SDK’sı bulunmaz; verilerin reklam ağlarına satılmaz.</p></div></li>
+        <li class="trust-item reveal"><span class="ti-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></span><div><h3>Görünürlük senin elinde</h3><p>Gönderi ve hikâyelerinin kime görüneceğini sen seçersin; rahatsız edici içeriği bildirip kullanıcıları engelleyebilirsin.</p></div></li>
+        <li class="trust-item reveal"><span class="ti-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6"/><path d="M6 7l1 13h10l1-13M9 7V4h6v3"/></svg></span><div><h3>Hesabını silme hakkı</h3><p>Hesabını ve ilişkili verilerini uygulama içinden ya da <a href="public-legal/delete-account.html">hesap silme sayfasından</a> dilediğin zaman silebilirsin.</p></div></li>
+        <li class="trust-item reveal"><span class="ti-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h3>Doğrulanmış antrenörler</h3><p>Antrenör aramasında yalnızca doğrulanmış ve yayınlanmış profiller listelenir.</p></div></li>
+        <li class="trust-item reveal"><span class="ti-icon ti-text" aria-hidden="true">15+</span><div><h3>15 yaş ve üzeri</h3><p>FOYTRAL, 15 yaş ve üzerindeki sporcular için tasarlanmıştır.</p></div></li>
+      </ul>
+      <div class="trust-links reveal">
+        <a class="btn btn-ghost" href="public-legal/privacy.html">Gizlilik politikası</a>
+        <a class="btn btn-ghost" href="public-legal/index.html">Yasal merkez</a>
       </div>
     </div>
   </section>
 
   <section class="section" id="google-play" aria-labelledby="play-title">
     <div class="container">
-      <div class="play-box">
+      <div class="play-card reveal">
+        <div class="brand-tile"><img src="assets/foytral-mark.svg" alt="" width="44" height="44" loading="lazy"></div>
         <div>
-          <p class="eyebrow">Android</p>
+          <p class="eyebrow" lang="en">Android</p>
           <h2 id="play-title">Google Play’de yakında.</h2>
           <p>FOYTRAL şu anda test aşamasında. Yayına çıktığında bu sayfadan doğrudan Google Play’e ulaşabileceksin.</p>
         </div>
-        <span class="soon-pill" role="note"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.5 3.3c-.3.3-.5.7-.5 1.2v15c0 .5.2.9.5 1.2l8.4-8.7L4.5 3.3Zm9.4 9.7 2.5 2.6-10 5.7 7.5-8.3Zm0-2L6.4 2.7l10 5.7-2.5 2.6Zm3.4 3.6-2.7-2.6 2.7-2.8 3 1.7c.9.5.9 1.5 0 2l-3 1.7Z"/></svg> Yakında Google Play’de</span>
+        <span class="soon-badge" role="note"><span class="soon-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16V11a6 6 0 1 1 12 0v5l2 2H4l2-2Z"/><path d="M10 21h4"/></svg></span><span class="soon-badge-text"><small>Durum</small><span>Test aşamasında</span></span></span>
       </div>
-    </div>
-  </section>
-
-  <section class="section" id="guven" aria-labelledby="guven-title">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow">Gizlilik ve güven</p>
-        <h2 id="guven-title">Verilerin senin kontrolünde.</h2>
-      </div>
-      <ul class="trust-list">
-        <li>Konum izni yalnızca harita ve antrenman kaydı için, senin onayınla kullanılır.</li>
-        <li>Uygulamada reklam ve reklam takibi bulunmaz.</li>
-        <li>Hesabını uygulama içinden ya da <a href="public-legal/delete-account.html">hesap silme sayfasından</a> silebilirsin.</li>
-        <li>Tüm ayrıntılar <a href="public-legal/privacy.html">gizlilik politikasında</a> ve <a href="public-legal/index.html">yasal merkezde</a>.</li>
-      </ul>
     </div>
   </section>
 </main>
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-brand">
-      <strong>FOYTRAL</strong>
-      <span>Yayıncı: Oğuz Balcı (bireysel geliştirici) · <a href="mailto:oguzbalci03@gmail.com">oguzbalci03@gmail.com</a></span>
-      <span class="small">© 2026 FOYTRAL</span>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="FOYTRAL ana sayfa"><span class="brand-mark"><img src="assets/foytral-mark.svg" alt="" width="26" height="26"></span><span>FOYTRAL</span></a>
+        <p>Sporunu bul. İnsanını bul. Birlikte yap. Salonlar, antrenörler, topluluklar ve antrenman takibi tek uygulamada.</p>
+      </div>
+      <div class="footer-cols">
+        <nav class="footer-col" aria-labelledby="f-urun">
+          <h2 id="f-urun">Ürün</h2>
+          <ul>
+            <li><a href="index.html#ozellikler">Özellikler</a></li>
+            <li><a href="index.html#ekranlar">Ekranlar</a></li>
+            <li><a href="index.html#guven">Gizlilik ve güven</a></li>
+            <li><a href="index.html#google-play">Google Play · yakında</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-labelledby="f-yasal">
+          <h2 id="f-yasal">Yasal</h2>
+          <ul>
+            <li><a href="public-legal/privacy.html">Gizlilik</a></li>
+            <li><a href="public-legal/terms.html">Koşullar</a></li>
+            <li><a href="public-legal/community.html">Topluluk kuralları</a></li>
+            <li><a href="public-legal/third-party.html">Üçüncü taraflar</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-labelledby="f-destek">
+          <h2 id="f-destek">Destek</h2>
+          <ul>
+            <li><a href="public-legal/about.html">Hakkımızda</a></li>
+            <li><a href="public-legal/contact.html">İletişim</a></li>
+            <li><a href="public-legal/delete-account.html">Hesap silme</a></li>
+            <li><a href="public-legal/index.html">Yasal merkez</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <nav class="footer-links" aria-label="Yasal bağlantılar">
-      <a href="public-legal/about.html">Hakkımızda</a>
-      <a href="public-legal/privacy.html">Gizlilik</a>
-      <a href="public-legal/terms.html">Koşullar</a>
-      <a href="public-legal/community.html">Topluluk kuralları</a>
-      <a href="public-legal/third-party.html">Üçüncü taraflar</a>
-      <a href="public-legal/delete-account.html">Hesap silme</a>
-      <a href="public-legal/contact.html">İletişim</a>
-    </nav>
+    <div class="footer-bottom">
+      <p>© 2026 FOYTRAL · Yayıncı: Oğuz Balcı (bireysel geliştirici) · <a href="mailto:oguzbalci03@gmail.com">oguzbalci03@gmail.com</a></p>
+      <a class="to-top" href="#top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>Başa dön</a>
+    </div>
   </div>
 </footer>
 </body>
